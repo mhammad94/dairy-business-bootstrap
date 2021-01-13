@@ -5012,7 +5012,8 @@
 }
 
 .mdi-email-outline:before {
-	content: "\f2e5";
+	content: "\f0e0";
+    font-family: 'FontAwesome';
 }
 
 .mdi-email-secure:before {
@@ -6403,7 +6404,8 @@
 }
 
 .mdi-map-marker:before {
-	content: "\f440";
+	content: "\f3c5";
+    font-family: 'FontAwesome';
 }
 
 .mdi-map-marker-circle:before {
@@ -7047,7 +7049,8 @@
 }
 
 .mdi-phone:before {
-	content: "\f4e1";
+	content: "\f879";
+    font-family: 'FontAwesome';
 }
 
 .mdi-phone-bluetooth:before {
