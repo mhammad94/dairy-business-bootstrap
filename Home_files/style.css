@@ -16819,6 +16819,7 @@ html:not(.ie-10):not(.ie-11):not(.ie-edge) .countdown-circle svg {
  * Owl Pagination
  */
 .owl-dots {
+	display: none !important;
 	text-align: center;
 	margin-top: 30px;
 	font-size: 0;

@@ -285,7 +285,7 @@
 				navContainer: c.attr("data-navigation-class") || false,
 				mouseDrag: isNoviBuilder ? false : c.attr("data-mouse-drag") !== "false",
 				nav: c.attr("data-nav") === "true",
-				dots: c.attr("data-dots") === "true",
+				dots: c.attr("data-dots") === "false",
 				dotsEach: c.attr("data-dots-each") ? parseInt(c.attr("data-dots-each"), 10) : false,
 				animateIn: c.attr('data-animation-in') ? c.attr('data-animation-in') : false,
 				animateOut: c.attr('data-animation-out') ? c.attr('data-animation-out') : false,
@@ -295,7 +295,6 @@
 				navClass: c.attr("data-nav-class") ? $.parseJSON( c.attr("data-nav-class") ) : ['owl-prev', 'owl-next']
 			});
 		}
-
 		/**
 		 * @desc Create live search results
 		 * @param {object} options
