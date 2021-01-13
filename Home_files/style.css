@@ -11454,20 +11454,20 @@ html.tablet .ui-to-top {
 }
 
 .rd-navbar-static .rd-navbar-search-toggle span::before {
-	content: "";
+	content: "\f002";
 	transform: rotate(0deg) scale(1);
 	opacity: 1;
 	visibility: visible;
-	font-family: "fl-bigmug-line";
+	font-family: 'FontAwesome';
 }
 
-.rd-navbar-static .rd-navbar-search-toggle span::after {
+/**.rd-navbar-static .rd-navbar-search-toggle span::after {
 	content: "";
 	transform: rotate(-90deg) scale(0.4);
 	opacity: 0;
 	visibility: hidden;
 	font-family: "fl-bigmug-line";
-}
+}*/
 
 .rd-navbar-static .rd-navbar-search-toggle.active span::before {
 	opacity: 0;
