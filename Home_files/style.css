@@ -19785,3 +19785,28 @@ html#ecwid_html body#ecwid_body .ec-size.ec-size--m .ec-store .details-gallery__
 		height: 36px;
 	}
 }
+
+
+
+/** Google Map **/ 
+
+
+#map-container-google-2{
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	position: relative;
+	height: 0;
+}
+
+#map-container-google-2 iframe{
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+.google-map-location .icon{
+	font-size: 38px;
+    color: #629bd0;
+}
