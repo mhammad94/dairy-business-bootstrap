@@ -760,7 +760,13 @@
 				swiper,
 				options = {
 					loop: sliderMarkup.getAttribute('data-loop') === 'true' || false,
-					effect: sliderMarkup.getAttribute('data-effect') || 'slide',
+					effect: sliderMarkup.getAttribute('data-effect') || 'cube',
+					cubeEffect: {
+						slideShadows: true,
+						shadow:true,
+						shadowOffset:20,
+						shadowScale:0.94,
+					},
 					direction: sliderMarkup.getAttribute('data-direction') || 'horizontal',
 					speed: sliderMarkup.getAttribute('data-speed') ? Number(sliderMarkup.getAttribute('data-speed')) : 600,
 					simulateTouch: sliderMarkup.getAttribute('data-simulate-touch') === 'true' && !isNoviBuilder || false,
