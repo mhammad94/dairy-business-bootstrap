@@ -20797,3 +20797,47 @@ html#ecwid_html body#ecwid_body .ec-size.ec-size--m .ec-store .details-gallery__
     align-items: center;
   }
   
+
+
+  /** Responsive **/
+
+  @media (min-width: 320px) and (max-width:767px){
+
+    .main-timeline-section{
+        height: 350px;
+    }
+
+    .timeline-article .meta-date{
+        top: 58%;
+        left: -4px;
+    }
+
+    .timeline-article .content-date{
+        top: 48%;
+        left: -30px;
+    }
+
+    .timeline-article-bottom .content-date{
+        top: 63%;
+    }
+    .flip-card{
+        width: 90px;
+        height: 60px;
+    }
+
+    .timeline-article .content-date{
+    font-size: 10px;
+    }
+
+    .timeline-article .content-box{
+        top: 70%;
+        left: -49px;
+    }
+
+    .timeline-article-bottom .content-box {
+        top: 20%;
+    }
+  }
+
+
+
