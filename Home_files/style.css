@@ -2799,7 +2799,8 @@ p+.list-marked {
 }
 
 .list-social-2 a:hover {
-    color: #629bd0;
+    color: #629bd0 !important;
+    cursor: pointer;
 }
 
 .list-social-title {
@@ -2846,6 +2847,7 @@ p+.list-marked {
 
 .list-social-3 a:hover {
     color: #629bd0 !important;
+    cursor: pointer;
 }
 
 .list-social-3 a:hover {
