@@ -970,3 +970,11 @@
 }());
 
 
+
+// About Us Carousel 
+
+$('.carousel').carousel({
+	interval: 3000
+})
+
+

@@ -5601,8 +5601,7 @@ hr {
 }
 
 .footer-modern-panel {
-    padding: 20px 0;
-    border-top: 1px solid #e1e1e1;
+    padding: 10px 0;
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -7351,7 +7350,7 @@ hr {
     display: inline-block;
     overflow: hidden;
     border-radius: 50%;
-    border: 14px solid #ffffff;
+    border: 5px solid #ffffff;
     z-index: 1;
 }
 
@@ -7409,7 +7408,7 @@ hr {
 
 @media (min-width: 992px) {
     .team-creative-header {
-        max-width: 277px;
+        max-width: 200px;
     }
     *+.team-creative-text {
         margin-top: 10px;
@@ -8623,10 +8622,10 @@ html [class*='section-'].section-top-0 {
         padding: 90px 0;
     }
     .section-xl {
-        padding: 50px 0;
+        padding: 30px 0;
     }
     .section-xxl {
-        padding: 85px 0;
+        padding: 60px 0;
     }
     .section-inset-1 {
         padding: 120px 0;
@@ -12410,6 +12409,11 @@ html.rd-navbar-fixed-linked .page {
     color:#ffffff !important;
 }
 
+.rd-navbar-modern.rd-navbar-static.rd-navbar--is-stuck .rd-navbar-main-outer ul.rd-navbar-nav li a:hover{
+color: #629bd0 !important;
+}
+
+
 .rd-navbar-modern.rd-navbar-static .rd-nav-item.focus .rd-nav-link::before,
 .rd-navbar-modern.rd-navbar-static .rd-nav-item.opened .rd-nav-link::before,
 .rd-navbar-modern.rd-navbar-static .rd-nav-item.active .rd-nav-link::before {
@@ -12847,8 +12851,8 @@ html.rd-navbar-fixed-linked .page {
     color: inherit;
 }
 
-.rd-navbar-corporate.rd-navbar-static .rd-nav-link:hover {
-    color: #e8f063;
+.rd-navbar-static .rd-nav-link:hover{
+    color:#629bd0 !important;
 }
 
 .rd-navbar-corporate.rd-navbar-static.rd-navbar--is-stuck .rd-navbar-main-outer,
@@ -15481,7 +15485,7 @@ html.rd-navbar-fixed-linked .page {
     }
     .tabs-jean .tab-content {
         position: relative;
-        padding: 8% 0 14% 17%;
+        padding: 8% 0px 6% 9%;
         z-index: 1;
     }
     .tabs-jean .tab-content::before {
@@ -15523,7 +15527,7 @@ html.rd-navbar-fixed-linked .page {
         padding-right: 5%;
     }
     .tabs-jean *+.nav-tabs-wrap {
-        margin-top: 55px;
+    margin-top: 20px;
     }
 }
 
