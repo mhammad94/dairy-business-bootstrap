@@ -716,7 +716,6 @@
 			for (var i = 0; i < plugins.swiper.length; i++) {
 				plugins.swiper[i].swiper = initSwiper(plugins.swiper[i]);
 			}
-
 			var dynamicSwipers = $('.swiper-slider-custom');
 			if(dynamicSwipers.length) {
 				$window.on('resize orientationchange', function () {
@@ -969,3 +968,5 @@
 
 	});
 }());
+
+
