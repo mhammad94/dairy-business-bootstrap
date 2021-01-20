@@ -2789,7 +2789,7 @@ p+.list-marked {
 }
 
 .list-social-2 .mdi-google-plus {
-    font-size: 28px;
+    font-size: 20px;
 }
 
 .list-social-2 a,
@@ -2823,20 +2823,20 @@ p+.list-marked {
 .list-social-3 .icon {
     text-align: center;
     vertical-align: middle;
-    width: 41px;
-    height: 41px;
-    font-size: 18px;
-    line-height: 39px;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    line-height: 28px;
     border-radius: 50%;
     border: 1px solid;
 }
 
 .list-social-3 .mdi-google-plus {
-    font-size: 25px;
+    font-size: 15px;
 }
 
 .list-social-3 .mdi-skype {
-    font-size: 24px;
+    font-size: 15px;
 }
 
 .list-social-3 a,
@@ -12440,7 +12440,7 @@ color: #629bd0 !important;
 .rd-navbar-modern.rd-navbar-static.rd-navbar--is-stuck,
 .rd-navbar-modern.rd-navbar-static.rd-navbar--is-clone {
     box-shadow: 0 0 5px 0 rgba(1, 3, 4, 0.19);
-    background-color: black;
+    background-color: #696969;
 }
 
 .rd-navbar--is-stuck.rd-nav-link{
