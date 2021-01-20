@@ -592,23 +592,13 @@
 		}
 
 		// Google maps
-		if( plugins.maps.length ) {
-			lazyInit( plugins.maps, initMaps );
-		}
+	
 
 		// Add custom styling options for input[type="radio"]
-		if (plugins.radio.length) {
-			for (var i = 0; i < plugins.radio.length; i++) {
-				$(plugins.radio[i]).addClass("radio-custom").after("<span class='radio-custom-dummy'></span>")
-			}
-		}
+		
 
 		// Add custom styling options for input[type="checkbox"]
-		if (plugins.checkbox.length) {
-			for (var i = 0; i < plugins.checkbox.length; i++) {
-				$(plugins.checkbox[i]).addClass("checkbox-custom").after("<span class='checkbox-custom-dummy'></span>")
-			}
-		}
+	
 
 		// UI To Top
 		if (isDesktop && !isNoviBuilder) {
@@ -977,5 +967,4 @@
 $('.carousel').carousel({
 	interval: 2000,
 })
-
 
