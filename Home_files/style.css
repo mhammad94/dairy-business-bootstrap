@@ -19751,4 +19751,10 @@ html#ecwid_html body#ecwid_body .ec-size.ec-size--m .ec-store .details-gallery__
   }
 
 
-
+  /** Bootstrap 4 Carousel **/
+  .carousel-fade .carousel-item .active{
+    transition: transform .2s;
+  }
+  .carousel-fade .carousel-item .active:hover{
+    transform: scale(1.5) !important; 
+  }

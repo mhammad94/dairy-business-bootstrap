@@ -235,7 +235,7 @@
 				responsive[values[j]] = {};
 				for (var k = j; k >= -1; k--) {
 					if (!responsive[values[j]]["items"] && c.attr("data" + aliaces[k] + "items")) {
-						responsive[values[j]]["items"] = k < 0 ? 1 : parseInt(c.attr("data" + aliaces[k] + "items"), 10);
+						responsive[values[j]]["items"] = k < 0 ? 1 : parseInt(c.attr("data" + aliaces[k] + "items"), 4);
 					}
 					if (!responsive[values[j]]["stagePadding"] && responsive[values[j]]["stagePadding"] !== 0 && c.attr("data" + aliaces[k] + "stage-padding")) {
 						responsive[values[j]]["stagePadding"] = k < 0 ? 0 : parseInt(c.attr("data" + aliaces[k] + "stage-padding"), 10);
@@ -254,7 +254,7 @@
 						active = 0;
 
 					if (carousel.attr('data-active')) {
-						active = parseInt(carousel.attr('data-active'), 10);
+						active = parseInt(carousel.attr('data-active'), 4);
 					}
 
 					carousel.trigger('to.owl.carousel', [active, 300, true]);
@@ -262,7 +262,7 @@
 
 					customPag.find("[data-owl-item]").on('click', function (e) {
 						e.preventDefault();
-						carousel.trigger('to.owl.carousel', [parseInt(this.getAttribute("data-owl-item"), 10), 300, true]);
+						carousel.trigger('to.owl.carousel', [parseInt(this.getAttribute("data-owl-item"), 4), 300, true]);
 					});
 
 					carousel.on("translate.owl.carousel", function (event) {
@@ -279,7 +279,7 @@
 			c.owlCarousel({
 				autoplay: isNoviBuilder ? false : c.attr("data-autoplay") === "true",
 				loop: isNoviBuilder ? false : c.attr("data-loop") !== "false",
-				items: 1,
+				items: 8,
 				center: c.attr("data-center") === "true",
 				dotsContainer: c.attr("data-pagination-class") || false,
 				navContainer: c.attr("data-navigation-class") || false,
@@ -290,7 +290,7 @@
 				animateIn: c.attr('data-animation-in') ? c.attr('data-animation-in') : false,
 				animateOut: c.attr('data-animation-out') ? c.attr('data-animation-out') : false,
 				responsive: responsive,
-				smartSpeed: c.attr('data-smart-speed') ? c.attr('data-smart-speed') : 250,
+				smartSpeed: c.attr('data-smart-speed') ? c.attr('data-smart-speed') : 300,
 				navText: c.attr("data-nav-text") ? $.parseJSON( c.attr("data-nav-text") ) : [],
 				navClass: c.attr("data-nav-class") ? $.parseJSON( c.attr("data-nav-class") ) : ['owl-prev', 'owl-next']
 			});
