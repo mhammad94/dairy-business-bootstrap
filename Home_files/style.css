@@ -438,7 +438,7 @@ h1,
 @media (min-width: 1200px) {
     h1,
     .heading-1 {
-        font-size: 100px;
+        font-size: 65px;
     }
 }
 
@@ -506,7 +506,7 @@ h3,
     h3,
     .heading-3,
     .event-classic-date {
-        font-size: 36px;
+        font-size: 25px;
     }
 }
 
@@ -3910,7 +3910,7 @@ hr {
 
 @media (min-width: 992px) {
     .button-lg {
-        padding: 19px 50px;
+        padding: 10px 25px;
     }
 }
 
@@ -8625,7 +8625,7 @@ html [class*='section-'].section-top-0 {
         padding: 30px 0;
     }
     .section-xxl {
-        padding: 60px 0;
+        padding: 90px 0;;
     }
     .section-inset-1 {
         padding: 120px 0;
@@ -12321,7 +12321,7 @@ html.rd-navbar-fixed-linked .page {
 .rd-navbar-modern.rd-navbar-static .rd-navbar-main {
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
     max-width: 1170px;
@@ -14002,7 +14002,7 @@ color: #629bd0 !important;
 .swiper-slider-3 .swiper-title-2 span::before {
     display: inline-block;
     content: '';
-    width: 60px;
+    width: 15px;
     border-top: 2px solid;
 }
 
@@ -14040,8 +14040,8 @@ color: #629bd0 !important;
 
 @media (min-width: 992px) {
     .swiper-slider-3 .swiper-slide-caption {
-        padding-right: 90px;
-        padding-left: 90px;
+        padding-right: 70px;
+        padding-left: 70px;
     }
 }
 
@@ -19600,8 +19600,8 @@ html#ecwid_html body#ecwid_body .ec-size.ec-size--m .ec-store .details-gallery__
     border-radius: 10px;
     background-color: #fff;
     position: absolute;
-    top: 88%;
-    left: -87px; 
+    top: 84%;
+    left: -150px;
     padding:10px;
   }
   .timeline-article-top .content-box:before{
@@ -19617,7 +19617,7 @@ html#ecwid_html body#ecwid_body .ec-size.ec-size--m .ec-store .details-gallery__
     top: 80%;
   }
   .timeline-article-bottom .content-box{
-    top: 15%;
+    top: -11%;
   }
   .timeline-article-bottom .content-box:before{
     content: " ";
@@ -19632,8 +19632,8 @@ html#ecwid_html body#ecwid_body .ec-size.ec-size--m .ec-store .details-gallery__
 
   .flip-card {
     background-color: transparent;
-    width: 175px;
-    height: 127px;
+    width: 300px;
+    height: 215px;
     border: 1px solid #f1f1f1;
     perspective: 1000px; 
   }
@@ -19718,6 +19718,36 @@ html#ecwid_html body#ecwid_body .ec-size.ec-size--m .ec-store .details-gallery__
     .timeline-article-bottom .content-box {
         top: 20%;
     }
+
+    .main-timeline-section .timeline-start, .main-timeline-section .timeline-end{
+        width: 20px;
+        height: 20px;
+    }
+
+    p.rights{
+        font-size: 12px !important;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px ){
+
+    .flip-card{
+       width: 200px;
+       height: 145px;
+    }
+
+    .timeline-article-bottom .content-box{
+        top: 5% !important;
+    }
+
+    .timeline-article .content-box{
+        left: -99px;
+        top:95%;
+    
+    }
+
+
+
   }
 
 

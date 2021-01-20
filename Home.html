@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html class="wide wow-animation desktop landscape rd-navbar-static-linked" lang="en">
-  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Home</title>
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -40,8 +41,8 @@
       <header class="section page-header">
         <!-- RD Navbar-->
         <div class="rd-navbar-wrap">
-          <nav class="rd-navbar rd-navbar-modern rd-navbar-original rd-navbar-static" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="100px" data-xl-stick-up-offset="120px" data-xxl-stick-up-offset="140px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
-            <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1 toggle-original" data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
+          <nav class="rd-navbar rd-navbar-modern rd-navbar-original rd-navbar-static" id="NavBarMain" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="100px" data-xl-stick-up-offset="120px" data-xxl-stick-up-offset="140px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+            <!--<div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1 toggle-original" data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>-->
             <div class="rd-navbar-aside-outer d-none" id="OuterNav">
               <div class="rd-navbar-aside">
                 <div class="rd-navbar-collapse toggle-original-elements">
@@ -52,23 +53,25 @@
                     </div>
                   </div><a class="button button-sm button-icon button-icon-left button-default-outline-3 button-zakaria"><span class="fas fa-envelope"></span>Get in touch</a>
                 </div>
-                <!-- RD Navbar Panel-->
-                <div class="rd-navbar-panel">
-                  <!-- RD Navbar Toggle-->
-                  <button class="rd-navbar-toggle toggle-original" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
-                  <!-- RD Navbar Brand-->
-                  <div class="rd-navbar-brand">
-                    <!--Brand--><a class="brand"><img class="brand-logo-dark" src="./Home_files/logo-default-206x114.png" alt="" width="103" height="57"><img class="brand-logo-light" src="./Home_files/logo-inverse-206x114.png" alt="" width="103" height="57"></a>
-                  </div>
-                </div>
+                
                 <div class="rd-navbar-button"><a class="button button-sm button-icon button-icon-left button-default-outline-3 button-zakaria"><span class="fas fa-envelope fa-2x mr-2"></span>Get in touch</a></div>
               </div>
             </div>
-            <div class="rd-navbar-main-outer">
+            <div class="container">
+              <!-- RD Navbar Panel-->
+              <div class="rd-navbar-panel">
+                <!-- RD Navbar Toggle-->
+                <button class="rd-navbar-toggle toggle-original" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                <!-- RD Navbar Brand-->
+                <!--<div class="rd-navbar-brand">
+                  <!--Brand--><!--<a class="brand"><img class="brand-logo-dark" src="./Home_files/logo-default-206x114.png" alt="" width="103" height="57"><img class="brand-logo-light" src="./Home_files/logo-inverse-206x114.png" alt="" width="103" height="57"></a>
+                </div>-->
+              </div>
+            <div class="rd-navbar-main-outer p-0">
               <div class="rd-navbar-main">
                 <div class="rd-navbar-nav-wrap toggle-original-elements">
                   <ul class="rd-navbar-nav">
-                    <li class="rd-nav-item active"><a class="rd-nav-link" href="#OuterNav">Home</a>
+                    <li class="rd-nav-item active"><a class="rd-nav-link" href="#bannerSection">Home</a>
                     </li>
                     <li class="rd-nav-item rd-navbar--has-dropdown rd-navbar-submenu"><a class="rd-nav-link" href="#AboutUs">About Us</a>
                     </li>
@@ -86,41 +89,42 @@
                 </div>
               </div>
             </div>
+          </div>
           </nav>
         </div>
       </header>
       <!-- Swiper-->
       <section class="section swiper-container swiper-slider swiper-slider-3 swiper-container-horizontal" data-loop="true" id="bannerSection">
         <div class="swiper-wrapper context-dark text-md-left" style="transition-duration: 0ms; transform: translate3d(-4047px, 0px, 0px);"><div class="swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev" data-slide-bg="Home_files/images/slide-1.jpg" style="background-image: url(Home_files/images/slide-1.jpg); width: 1349px;" data-swiper-slide-index="1">
-            <div class="swiper-slide-caption section-xxl">
+            <div class="swiper-slide-caption swiper-slide-active section-xxl">
               <div class="container">
-                <h1 class="swiper-title-1 not-animated" data-caption-animate="fadeInLeft" data-caption-delay="100">Fresh</h1>
-                <h3 class="swiper-title-2 not-animated" data-caption-animate="fadeInLeft" data-caption-delay="250"><span></span>Dairy produce</h3>
-                <h4 class="swiper-title-3 not-animated" data-caption-animate="fadeInLeft" data-caption-delay="400">Providing locals and guests with <br class="d-none d-sm-block">wholesome milk products
+                <h1 class="swiper-title-1 animated" data-caption-animate="fadeInLeft" data-caption-delay="100">Fresh</h1>
+                <h3 class="swiper-title-2 animated" data-caption-animate="fadeInLeft" data-caption-delay="250"><span></span>Dairy produce</h3>
+                <h4 class="swiper-title-3 animated" data-caption-animate="fadeInLeft" data-caption-delay="400">Providing locals and guests with <br class="d-none d-sm-block">wholesome milk products
                 </h4>
-                <div class="button-wrap not-animated" data-caption-animate="fadeInLeft" data-caption-delay="550"><a class="button button-lg button-shadow-2 button-secondary button-zakaria">Shop now</a></div>
+                <div class="button-wrap animated" data-caption-animate="fadeInLeft" data-caption-delay="550"><a class="button button-lg button-shadow-2 button-secondary button-zakaria">Shop now</a></div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide swiper-slide-duplicate-active" data-slide-bg="Home_files/images/slide-2.jpg" style="background-image: url(Home_files/images/slide-2.jpg); width: 1349px;" data-swiper-slide-index="0">
+          <div class="swiper-slide swiper-slide-active" data-slide-bg="Home_files/images/slide-2.jpg" style="background-image: url(Home_files/images/slide-2.jpg); width: 1349px;" data-swiper-slide-index="0">
             <div class="swiper-slide-caption section-xxl">
               <div class="container">
-                <h1 class="swiper-title-1 not-animated" data-caption-animate="fadeInLeft" data-caption-delay="100">Organic</h1>
-                <h3 class="swiper-title-2 not-animated" data-caption-animate="fadeInLeft" data-caption-delay="250"><span></span>Milk Products</h3>
-                <h4 class="swiper-title-3 not-animated" data-caption-animate="fadeInLeft" data-caption-delay="400">Free delivery of fresh milk and <br class="d-none d-sm-block">cheese from the local farm
+                <h1 class="swiper-title-1 animated" data-caption-animate="fadeInLeft" data-caption-delay="100">Organic</h1>
+                <h3 class="swiper-title-2 animated" data-caption-animate="fadeInLeft" data-caption-delay="250"><span></span>Milk Products</h3>
+                <h4 class="swiper-title-3 animated" data-caption-animate="fadeInLeft" data-caption-delay="400">Free delivery of fresh milk and <br class="d-none d-sm-block">cheese from the local farm
                 </h4>
-                <div class="button-wrap not-animated" data-caption-animate="fadeInLeft" data-caption-delay="550"><a class="button button-lg button-shadow-2 button-secondary button-zakaria">Shop now</a></div>
+                <div class="button-wrap animated" data-caption-animate="fadeInLeft" data-caption-delay="550"><a class="button button-lg button-shadow-2 button-secondary button-zakaria">Shop now</a></div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide swiper-slide-prev swiper-slide-duplicate-next" data-slide-bg="Home_files/images/slide-1.jpg" style="background-image: url(Home_files/images/slide-1.jpg); width: 1349px;" data-swiper-slide-index="1">
+          <div class="swiper-slide swiper-slide-prev swiper-slide-active" data-slide-bg="Home_files/images/slide-1.jpg" style="background-image: url(Home_files/images/slide-1.jpg); width: 1349px;" data-swiper-slide-index="1">
             <div class="swiper-slide-caption section-xxl">
               <div class="container">
-                <h1 class="swiper-title-1 not-animated" data-caption-animate="fadeInLeft" data-caption-delay="100">Fresh</h1>
-                <h3 class="swiper-title-2 not-animated" data-caption-animate="fadeInLeft" data-caption-delay="250"><span></span>Dairy produce</h3>
-                <h4 class="swiper-title-3 not-animated" data-caption-animate="fadeInLeft" data-caption-delay="400">Providing locals and guests with <br class="d-none d-sm-block">wholesome milk products
+                <h1 class="swiper-title-1 animated" data-caption-animate="fadeInLeft" data-caption-delay="100">Fresh</h1>
+                <h3 class="swiper-title-2 animated" data-caption-animate="fadeInLeft" data-caption-delay="250"><span></span>Dairy produce</h3>
+                <h4 class="swiper-title-3 animated" data-caption-animate="fadeInLeft" data-caption-delay="400">Providing locals and guests with <br class="d-none d-sm-block">wholesome milk products
                 </h4>
-                <div class="button-wrap not-animated" data-caption-animate="fadeInLeft" data-caption-delay="550"><a class="button button-lg button-shadow-2 button-secondary button-zakaria">Shop now</a></div>
+                <div class="button-wrap animated" data-caption-animate="fadeInLeft" data-caption-delay="550"><a class="button button-lg button-shadow-2 button-secondary button-zakaria">Shop now</a></div>
               </div>
             </div>
           </div>
@@ -147,7 +151,7 @@
         <div class="container">
           <article class="promo-classic">
             <h4 class="promo-classic-title">Quality Tested by Time</h4>
-            <p class="big promo-classic-text">We are the leading producer and processor of store-brand organic dairy products for U.S. retailers. Based in California, we deliver high-quality dairy products that are nationally recognized.</p><a class="button button-sm button-icon-3 button-secondary button-zakaria" href="#"><span class="fas fa-arrow-right"></span></a>
+            <p class="big promo-classic-text">We are the leading producer and processor of store-brand organic dairy products for U.S. retailers. Based in California, we deliver high-quality dairy products that are nationally recognized.</p><a class="button button-sm button-icon-3 button-secondary button-zakaria d-none" href="#"><span class="fas fa-arrow-right"></span></a>
           </article>
         </div>
       </section>
@@ -157,7 +161,7 @@
           <h2 class="wow fadeScale" style="visibility: visible; animation-name: fadeScale;">About us</h2>
           <div class="row row-30 row-lg justify-content-center">
             <div class="col-sm-8 col-md-7 col-lg-6 wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
-              <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+              <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img class="d-block w-100" src="/Home_files/about-1-340x243.jpg" alt="First slide">
@@ -196,7 +200,7 @@
                   </div>
                 </div>
                 <!-- Nav tabs-->
-                <div class="nav-tabs-wrap">
+                <div class="nav-tabs-wrap d-none d-md-block">
                   <ul class="nav nav-tabs">
                     <li class="nav-item" role="presentation"><div class="nav-link active">Our mission</div></li>
                     <li class="nav-item" role="presentation"><div class="nav-link">Quality control</div></li>
@@ -703,7 +707,7 @@
             
             
           <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1200px, 0px, 0px); transition: all 0s ease 0s; width: 3600px;"><div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><article class="team-creative wow slideInUp" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: slideInUp;">
-              <div class="team-creative-header"><a class="team-creative-figure" href="#"><img src="./Home_files/team-8-249x249.jpg" alt="" width="249" height="249"></a>
+              <div class="team-creative-header"><div class="team-creative-figure"><img src="./Home_files/team-8-249x249.jpg" alt="" width="249" height="249"></div>
                 <div class="team-creative-decor"></div>
               </div>
               <div class="team-creative-body">
@@ -717,7 +721,7 @@
                 </ul>
               </div>
             </article></div><div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><article class="team-creative wow slideInUp" style="visibility: visible; animation-name: slideInUp;">
-              <div class="team-creative-header"><a class="team-creative-figure"><img src="./Home_files/team-9-249x249.jpg" alt="" width="249" height="249"></a>
+              <div class="team-creative-header"><div class="team-creative-figure"><img src="./Home_files/team-9-249x249.jpg" alt="" width="249" height="249"></div>
                 <div class="team-creative-decor"></div>
               </div>
               <div class="team-creative-body">
@@ -731,7 +735,7 @@
                 </ul>
               </div>
             </article></div><div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><article class="team-creative wow slideInUp" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: slideInUp;">
-              <div class="team-creative-header"><a class="team-creative-figure"><img src="./Home_files/team-10-249x249.jpg" alt="" width="249" height="249"></a>
+              <div class="team-creative-header"><div class="team-creative-figure"><img src="./Home_files/team-10-249x249.jpg" alt="" width="249" height="249"></div>
                 <div class="team-creative-decor"></div>
               </div>
               <div class="team-creative-body">
@@ -744,7 +748,7 @@
                 </ul>
               </div>
             </article></div><div class="owl-item active" style="width: 370px; margin-right: 30px;"><article class="team-creative wow slideInUp" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: slideInUp;">
-              <div class="team-creative-header"><a class="team-creative-figure"><img src="./Home_files/team-8-249x249.jpg" alt="" width="249" height="249"></a>
+              <div class="team-creative-header"><div class="team-creative-figure"><img src="./Home_files/team-8-249x249.jpg" alt="" width="249" height="249"></div>
                 <div class="team-creative-decor"></div>
               </div>
               <div class="team-creative-body">
@@ -757,7 +761,7 @@
                 </ul>
               </div>
             </article></div><div class="owl-item active" style="width: 370px; margin-right: 30px;"><article class="team-creative wow slideInUp" style="visibility: visible; animation-name: slideInUp;">
-              <div class="team-creative-header"><a class="team-creative-figure"><img src="./Home_files/team-9-249x249.jpg" alt="" width="249" height="249"></a>
+              <div class="team-creative-header"><div class="team-creative-figure"><img src="./Home_files/team-9-249x249.jpg" alt="" width="249" height="249"></div>
                 <div class="team-creative-decor"></div>
               </div>
               <div class="team-creative-body">
@@ -770,7 +774,7 @@
                 </ul>
               </div>
             </article></div><div class="owl-item active" style="width: 370px; margin-right: 30px;"><article class="team-creative wow slideInUp" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: slideInUp;">
-              <div class="team-creative-header"><a class="team-creative-figure"><img src="./Home_files/team-10-249x249.jpg" alt="" width="249" height="249"></a>
+              <div class="team-creative-header"><div class="team-creative-figure"><img src="./Home_files/team-10-249x249.jpg" alt="" width="249" height="249"></div>
                 <div class="team-creative-decor"></div>
               </div>
               <div class="team-creative-body">
@@ -784,7 +788,7 @@
                 </ul>
               </div>
             </article></div><div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><article class="team-creative wow slideInUp" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: slideInUp;">
-              <div class="team-creative-header"><a class="team-creative-figure"><img src="./Home_files/team-8-249x249.jpg" alt="" width="249" height="249"></a>
+              <div class="team-creative-header"><div class="team-creative-figure"><img src="./Home_files/team-8-249x249.jpg" alt="" width="249" height="249"></div>
                 <div class="team-creative-decor"></div>
               </div>
               <div class="team-creative-body">
@@ -798,7 +802,7 @@
                 </ul>
               </div>
             </article></div><div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><article class="team-creative wow slideInUp" style="visibility: visible; animation-name: slideInUp;">
-              <div class="team-creative-header"><a class="team-creative-figure"><img src="./Home_files/team-9-249x249.jpg" alt="" width="249" height="249"></a>
+              <div class="team-creative-header"><div class="team-creative-figure"><img src="./Home_files/team-9-249x249.jpg" alt="" width="249" height="249"></div>
                 <div class="team-creative-decor"></div>
               </div>
               <div class="team-creative-body">
@@ -812,7 +816,7 @@
                 </ul>
               </div>
             </article></div><div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><article class="team-creative wow slideInUp" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: slideInUp;">
-              <div class="team-creative-header"><a class="team-creative-figure"><img src="./Home_files/team-10-249x249.jpg" alt="" width="249" height="249"></a>
+              <div class="team-creative-header"><div class="team-creative-figure"><img src="./Home_files/team-10-249x249.jpg" alt="" width="249" height="249"></div>
                 <div class="team-creative-decor"></div>
               </div>
               <div class="team-creative-body">
@@ -835,7 +839,7 @@
           <h2 class="wow fadeScale" style="visibility: visible; animation-name: fadeScale;">Events</h2>
           <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
-              <section class="main-timeline-section">
+              <section class="main-timeline-section mt-lg-4">
                   <div class="timeline-start"></div>
                   <div class="conference-center-line"></div>
                   <div class="conference-timeline-content">
@@ -1155,7 +1159,7 @@
               <div class="col-sm-6 col-md-7 col-lg-5 wow fadeInRight" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInRight;">
                 <h5 class="footer-modern-title">Quick Links</h5>
                 <ul class="footer-modern-list footer-modern-list-2 d-sm-inline-block d-md-block">
-                  <li><a href="#OuterNav">Home</a></li>
+                  <li><a href="#bannerSection">Home</a></li>
                   <li><a href="#AboutUs">About Us</a></li>
                   <li><a href="#OurProducts">Products</a></li>
                   <li><a href="#WhyChooseUs">Why Choose Us</a></li>
@@ -1196,9 +1200,9 @@
               </div>
             </div>
           </div>
-          <div class="footer-modern-panel text-left mt-4">
+          <div class="footer-modern-panel mt-2">
             <div class="container">
-              <p class="rights"><span>©&nbsp; </span><span class="copyright-year">2021</span><span>&nbsp;</span><span>Saufik</span><span>.&nbsp; All rights reserved.</span><span>&nbsp;</span><a href="https://livedemo00.template-help.com/wt_prod-26765/privacy-policy.html">Privacy Policy</a><span>.</span></p>
+              <p class="rights text-center"><span>©&nbsp; </span><span class="copyright-year">2021</span><span>&nbsp;</span><span>Saufik</span><span>.&nbsp; All rights reserved.</span><span>&nbsp;</span><a href="https://livedemo00.template-help.com/wt_prod-26765/privacy-policy.html">Privacy Policy</a><span>.</span></p>
             </div>
           </div>
         </div>
